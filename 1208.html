@@ -1,0 +1,36 @@
+_customtree.js
+1. fragment 
+   1> 리액트에서는 하나의 컴포넌트가 여러 개의 엘리먼트들을 반환한다. 
+       리액트를 사용하기 위한 문법인 JSX 를 쓸 때, return 문 안에는 반드시 하나의 최상위 태그가 있어야 한다. 
+       이는 리액트가 하나의 컴포넌트만을 리턴할 수 있기 때문이다.
+   2> return 구문에서 의미없는 div 태그를 추가시키지 말기 위해 사용
+   3> <Fragment> </Fragment> 대신 <> </> 이렇게 써도 된다.
+
+* react-loader-spinner
+   => 로그인하고 로딩이 된다는 것(로딩이미지)을 표시해주고 로그인성공하고 다음 페이지로 넘어가게 하고 싶다!
+
+* JSON.stringify() 
+   1> JSON : javascript object notation
+   2> json은 값이나 객체를 나타내주는 범용 포맷으로 RFC 4627 표준에 정의되어 있다.
+   3> json은 데이터 교환 목적으로 사용하는 경우가 많다.
+   ** JSON.stringify - 객체를 JSON으로 바꿔준다.
+   ** JSON.parse - JSON을 객체로 바꿔준다.
+       => JSON.stringify(a, b, c) 
+       => a : value : 인코딩 하려는 값, b : replacer : 매핑 함수(function(key,value)) , c : space(공백 문자 수)
+
+* require("xml2js").parseString
+	=> node.js의 xml2js를 이용하여 xml parse하기
+=>https://devel-up-tree.tistory.com/14
+
+
+=> XML(eXtensible Markup Language) 
+	- 목적에 맞게 사용될 수 있는 범용적인 데이터 형식
+	- 텍스트 데이터, 각각의 데이터에 태그를 붙임으로써 문서나 데이터를 구조화 가능
+	- 목적 : 다른 종류의 시스템 간에 구조화된 문서와 데이터를 쉽게 공유하는 것
+	- 범용적인 형식이며, xml을 바탕으로 한 다양한 데이터 형식이 존재
+	- 기계나 인간에게도 다루기 편한 데이터 형식으로 엑셀/워드 등 마이크로소프트의 오피스 저장 형식도 여러 xml파일을 zip으로 압축한 것
+	- 구조 : 요소(element)와 속성(attribute)
+	         => <element_name attribute="value">content</element_name>
+	         => xml은 트리 구조로 데이터를 표현할 수 있고, xml 데이터 파일에 저장하는 경우, xml 선언을 포함할 수 있다.
+=> node.js에서 xml을 다루는 법
+	- node.js에서는 xml을 파싱하기 위해 'cheerio-httpcli' 모듈을 포함하여 여러 가지 모듈이 존재한다.
